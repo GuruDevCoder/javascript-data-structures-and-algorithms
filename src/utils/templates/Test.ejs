@@ -1,0 +1,16 @@
+const <%= name %> =  require('../index')
+
+describe('<%= name %>', () => {
+  it('should behave...', () => {
+
+<% if ( kind === 'function') { %>
+
+    expect(<%= name %>()).toEqual('')
+<% } else if (kind === 'class') { %>
+    const  = new <%= name %>()
+    expect(fn).toEqual('')
+<% } %>
+
+  })
+
+})
